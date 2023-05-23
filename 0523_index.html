@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="0523_signup.css">
+</head>
+<body>
+    <h1 class="title1">Form Validation in JavaSript</h1>
+    <h4 class="title2">Sign Up</h4>
+    <div class="container">
+        <form action="#" onsubmit="return validation()" class="frm">
+            <div class ="form_group">
+                <label for="name" class="lbl">Name</label>
+                <input type="text" name="name" class="form_control" id="name" autocomplete="off"/>
+                <span id="Name" class="spn"></span> <!--The <span> tag is an inline container used to mark up a part of a text, or a part of a document. -->
+            </div>
+            <div class ="form_group">
+                <label for="mail" class="lbl">Email</label>
+                <input type="text" name="mail" class="form_control" id="mail" autocomplete="off"/>
+                <span id="email" class="spn"></span> 
+            </div>
+            <div class ="form_group">
+                <label for="user" class="lbl">Username</label>
+                <input type="text" name="user" class="form_control" id="user" autocomplete="off"/>
+                <span id="username" class="spn"></span> 
+            </div>
+            <div class ="form_group">
+                <label for="pass" class="lbl">Password</label>
+                <input type="text" name="pass" class="form_control" id="pass" autocomplete="off"/>
+                <span id="password" class="spn"></span> 
+            </div>
+            <div class ="form_group">
+                <label for="conpass" class="lbl">Confirm Password</label>
+                <input type="text" name="conpass" class="form_control" id="conpass" autocomplete="off"/>
+                <span id="con_password" class="spn"></span> 
+            </div>
+            <div class ="form_group">
+                <label for="mob" class="lbl">Mobile Number</label>
+                <input type="text" name="mob" class="form_control" id="mob" autocomplete="off"/>
+                <span id="mobile" class="spn"></span> 
+            </div>
+            <input type="submit" name="submit" value="Submit" class="butn-pri" autocomplete="off"/>
+            <input type="reset" name="reset" value="Reset" class="butn-sec" autocomplete="off"/>
+            &emsp; &emsp; &emsp; Already have an Account? <!--&emsp; : &amp;emsp; is a character entity used to denote em space. Width of &amp;emsp; is equal to an em, which is 16 pixels-->
+            <a href="0523_login.html">Login</a>
+            <br /><br />
+        </form>
+    </div>
+    <script src="0523_signup.js"></script>
+</body>
+</html>

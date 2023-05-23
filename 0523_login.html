@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="0523_login.css">
+</head>
+<body>
+    <h1 class="title1">Form Validation in JavaSript</h1>
+    <h4 class="title2">Login</h4>
+    <div class="container">
+        <form action="#" onsubmit="return validation()" class="frm">
+            <div class ="form_group">
+                <label for="user" class="lbl">Username</label>
+                <input type="text" name="user" class="form_control" id="user" autocomplete="off"/>
+                <span id="username" class="spn"></span> 
+            </div>
+            <div class ="form_group">
+                <label for="pass" class="lbl">Password</label>
+                <input type="text" name="pass" class="form_control" id="pass" autocomplete="off"/>
+                <span id="password" class="spn"></span> 
+            </div>
+            <input type="submit" name="submit" value="Submit" class="butn-pri" autocomplete="off"/>
+            &emsp; &emsp; &emsp;Did not have an Account? <!--&emsp; : &amp;emsp; is a character entity used to denote em space. Width of &amp;emsp; is equal to an em, which is 16 pixels-->
+            <a href="0523_index.html">Signup</a>
+            <br /><br />
+        </form>
+    </div>
+    <script src="0523_login.js"></script>
+</body>
+</html>
